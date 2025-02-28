@@ -2,10 +2,13 @@
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
 #include <ESP32Servo.h>
+#include "config.h"
 
-const char* ssid = "LapakAyam";
-const char* password = "reifalkontol";
-const char* serverUrl = "https://webiot-ardian56s-projects.vercel.app/latest-timer";
+// Network Configuration
+const char* ssid = WIFI_SSID;
+const char* password = WIFI_PASSWORD;
+const char* serverUrl = SERVER_URL;
+
 
 Servo servoMotor;
 const int servoPin = 2;
